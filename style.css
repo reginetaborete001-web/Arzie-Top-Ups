@@ -1,0 +1,66 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #1e293b;
+}
+
+.logo { font-weight: bold; font-size: 1.5rem; }
+.logo span { color: #38bdf8; }
+
+ul { list-style: none; display: flex; gap: 20px; }
+a { color: white; text-decoration: none; }
+
+header { text-align: center; padding: 50px 20px; }
+
+.container { display: flex; justify-content: center; }
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.game-grid, .denom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #334155;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.game-btn.active, .buy-now {
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.buy-now { width: 100%; margin-top: 10px; font-size: 1.1rem; }
